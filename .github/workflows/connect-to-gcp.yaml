@@ -13,7 +13,7 @@ jobs:
       #    python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
       #    architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
       - name: Set up Cloud SDK
-        uses: google-github-actions/setup-gcloud@master
+        uses: google-github-actions/setup-gcloud@main
         with:
           project_id: ${{ secrets.PROJECT_ID }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
